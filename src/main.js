@@ -27,28 +27,26 @@ const guildId = '1090370325096697969'
 client.once(Events.ClientReady, c => {
 	console.log(`Ready! Logged in as ${c.user.tag}`);
 
-    const guild = client.guilds.cache.get(guildId);
-    const role = guild.roles.cache.get(roleId);
-    
-    const channel = client.channels.cache.get("1091735037407399976");
-
-    const exampleEmbed = new EmbedBuilder()
-    .setTitle('Rules')
-    .setColor('#ff0000')
-    .setDescription('These are the rules for the server')
-    .addFields(
-        { name: '1. Respect others', value: 'Be respectful to other members of the server. Don\'t use offensive or derogatory language, and avoid any behavior that could make others uncomfortable.' },
-        { name: '2. No spamming', value: 'Don\'t spam the server with irrelevant or unnecessary messages. Avoid sending repetitive messages, emojis, or stickers.' },
-        { name: '3. No phishing', value: 'Don\'t share any links that could lead to phishing or scam websites. Avoid clicking on links from unknown sources.' },
-        { name: '4. No hacking', value: 'Don\'t attempt to hack the server or any member\'s account.' },
-        { name: '5. No sharing of personal information', value: 'Avoid sharing any personal information such as phone numbers, addresses, or any sensitive information that could be used to harm you.' },
-        { name: '6. No political or religious discussions', value: 'The server is not a place for political or religious discussions. Avoid sharing any content that could be considered controversial or offensive.' },
-        { name: '7. Follow Discord\'s terms of service', value: 'Follow Discord\'s terms of service and community guidelines. Any violation of these rules may result in a ban from the server.' }
-    )
-    .setImage('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/50ca5b2f-036a-4021-95b5-7c0f86d7b9a1/de0tyld-411dc576-9046-4409-a87a-66098f50b1fd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUwY2E1YjJmLTAzNmEtNDAyMS05NWI1LTdjMGY4NmQ3YjlhMVwvZGUwdHlsZC00MTFkYzU3Ni05MDQ2LTQ0MDktYTg3YS02NjA5OGY1MGIxZmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UcLwsz3yBDxrdzIlcf3i6OwBmNNdML24z5tfcy3EswM')
-    .setThumbnail('https://cdn-icons-png.flaticon.com/512/10219/10219818.png')
-    .setFooter({ text: 'Enjoy :)' });
-    channel.send({ embeds: [exampleEmbed] });
+    // const guild = client.guilds.cache.get(guildId);
+    // const role = guild.roles.cache.get(roleId);
+    // const channel = client.channels.cache.get("1091735037407399976");
+    // const exampleEmbed = new EmbedBuilder()
+    // .setTitle('Rules')
+    // .setColor('#ff0000')
+    // .setDescription('These are the rules for the server')
+    // .addFields(
+    //     { name: '1. Respect others', value: 'Be respectful to other members of the server. Don\'t use offensive or derogatory language, and avoid any behavior that could make others uncomfortable.' },
+    //     { name: '2. No spamming', value: 'Don\'t spam the server with irrelevant or unnecessary messages. Avoid sending repetitive messages, emojis, or stickers.' },
+    //     { name: '3. No phishing', value: 'Don\'t share any links that could lead to phishing or scam websites. Avoid clicking on links from unknown sources.' },
+    //     { name: '4. No hacking', value: 'Don\'t attempt to hack the server or any member\'s account.' },
+    //     { name: '5. No sharing of personal information', value: 'Avoid sharing any personal information such as phone numbers, addresses, or any sensitive information that could be used to harm you.' },
+    //     { name: '6. No political or religious discussions', value: 'The server is not a place for political or religious discussions. Avoid sharing any content that could be considered controversial or offensive.' },
+    //     { name: '7. Follow Discord\'s terms of service', value: 'Follow Discord\'s terms of service and community guidelines. Any violation of these rules may result in a ban from the server.' }
+    // )
+    // .setImage('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/50ca5b2f-036a-4021-95b5-7c0f86d7b9a1/de0tyld-411dc576-9046-4409-a87a-66098f50b1fd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUwY2E1YjJmLTAzNmEtNDAyMS05NWI1LTdjMGY4NmQ3YjlhMVwvZGUwdHlsZC00MTFkYzU3Ni05MDQ2LTQ0MDktYTg3YS02NjA5OGY1MGIxZmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UcLwsz3yBDxrdzIlcf3i6OwBmNNdML24z5tfcy3EswM')
+    // .setThumbnail('https://cdn-icons-png.flaticon.com/512/10219/10219818.png')
+    // .setFooter({ text: 'Enjoy :)' });
+    // channel.send({ embeds: [exampleEmbed] });
 });
 
 
